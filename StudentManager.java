@@ -47,4 +47,23 @@ public class StudentManager {
 
         System.out.println("Student not found.");
     }
+
+    // Update Student
+    public void updateStudent(int id, String name, int age, String course) {
+
+        for (Student student : students) {
+
+            if (student.id == id) {
+
+                student.name = name;
+                student.age = age;
+                student.course = course;
+
+                System.out.println("Student updated successfully!");
+                return;
+            }
+        }
+
+        System.out.println("Student not found.");
+    }
 }

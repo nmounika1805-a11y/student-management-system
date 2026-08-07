@@ -12,7 +12,10 @@ public class Main {
 
         manager.viewStudents();
 
-        System.out.println("\nSearching for Student with ID 102:");
-        manager.searchStudent(102);
+        System.out.println("\nUpdating Student with ID 102...\n");
+
+        manager.updateStudent(102, "Rahul Sharma", 21, "Artificial Intelligence");
+
+        manager.viewStudents();
     }
 }
