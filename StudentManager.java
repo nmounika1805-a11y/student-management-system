@@ -25,7 +25,7 @@ public class StudentManager {
             System.out.println("Name: " + student.name);
             System.out.println("Age: " + student.age);
             System.out.println("Course: " + student.course);
-            System.out.println("-------------------------");
+            System.out.println("---------------------------");
         }
     }
 
@@ -70,11 +70,11 @@ public class StudentManager {
     // Delete Student
     public void deleteStudent(int id) {
 
-        for (Student student : students) {
+        for (int i = 0; i < students.size(); i++) {
 
-            if (student.id == id) {
+            if (students.get(i).id == id) {
 
-                students.remove(student);
+                students.remove(i);
                 System.out.println("Student deleted successfully!");
                 return;
             }
