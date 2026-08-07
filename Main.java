@@ -5,7 +5,11 @@ public class Main {
         StudentManager manager = new StudentManager();
 
         Student s1 = new Student(101, "Mounika", 19, "Cyber Security");
+        Student s2 = new Student(102, "Rahul", 20, "Computer Science");
 
         manager.addStudent(s1);
+        manager.addStudent(s2);
+
+        manager.viewStudents();
     }
 }
