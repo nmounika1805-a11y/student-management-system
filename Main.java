@@ -12,9 +12,9 @@ public class Main {
 
         manager.viewStudents();
 
-        System.out.println("\nUpdating Student with ID 102...\n");
+        System.out.println("\nDeleting Student with ID 102...\n");
 
-        manager.updateStudent(102, "Rahul Sharma", 21, "Artificial Intelligence");
+        manager.deleteStudent(102);
 
         manager.viewStudents();
     }
