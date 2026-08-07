@@ -11,5 +11,8 @@ public class Main {
         manager.addStudent(s2);
 
         manager.viewStudents();
+
+        System.out.println("\nSearching for Student with ID 102:");
+        manager.searchStudent(102);
     }
 }
